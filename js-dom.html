@@ -8,7 +8,29 @@
 </head>
 
 <body>
-<p>id = "1"</p>
-<p>id = "2" </p>
+<p id = "1">Developers for life!</p>
+<p id = "2"></p>
+
+<button onclick="myFunction()">Press</button>  
+
+<script>
+function myFunction() {
+  var h = document.createElement("p");
+  var t = document.createTextNode("we are coders");
+  h.appendChild(t);
+  document.body.appendChild(h);
+}
+
+
+
+
+
+</script> 
+
+
+
+
+
+
 </body>
 </html>
