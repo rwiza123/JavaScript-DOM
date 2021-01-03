@@ -8,26 +8,55 @@
 </head>
 
 <body>
-<p id = "1">Developers for life!</p>
-<p id = "2"></p>
 
-<button onclick="myFunction()">Press</button>  
+  
+  
+  
+<p id = "demo">Developers for life</p>
+<img id ="myDIV" src ="lib\images\fist.png" width="300" height="300">
+<br>
+<br>
+  
+<button type = "button" onclick="myFunction1()">Set font size Big</button>
+<button type = "button" onclick="myFunction2()">Set font size small</button>
+<button type = "button" onclick="myFunction3()">Hide img</button>
+<button type = "button" onclick="myFunction()">Print text</button>  
+
+  
+
+
 
 <script>
-function myFunction() {
+ function myFunction() {
   var h = document.createElement("p");
   var t = document.createTextNode("we are coders");
   h.appendChild(t);
   document.body.appendChild(h);
+
 }
 
+function myFunction1() {
+  document.getElementById("demo").style.fontSize = "large";
+  document.getElementById("demo").style.color = "blue"
+}
 
+function myFunction2() {
+  document.getElementById("demo").style.fontSize = "small";
+  document.getElementById("demo").style.color = "green"
+}
+
+function myFunction3() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none"){
+    x.style.display = "block";
+  }else {
+    x.style.display = "none";
+  }
+  }
 
 
 
 </script> 
-
-
 
 
 
